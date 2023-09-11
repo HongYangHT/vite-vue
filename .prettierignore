@@ -1,0 +1,9 @@
+// .prettierignore
+node_modules
+dist
+env
+.gitignore
+pnpm-lock.yaml
+pnpm-workspace.yaml
+README_NEW.md
+README.md

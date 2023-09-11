@@ -1,0 +1,5 @@
+# monorepo 工程原因
+packages:
+ - 'packages/*'
+#  方便单元测试
+ - 'examples/*'

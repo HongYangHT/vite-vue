@@ -1,0 +1,10 @@
+/* 定义自定义的 `tailwind` 样式 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-size-large {
+    height: 200px;
+  }
+}

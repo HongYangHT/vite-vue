@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable", "WebWorker"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /* check Completeness */
+    "skipLibCheck": true,
+    // 设置路径
+    "paths": {
+      "@/*": ["./src/*"],
+      "virtual:pwa-register": ["./node_modules/vite-plugin-pwa"]
+    },
+    "types": ["node", "vite/client", "vite-plugin-pwa/client"]
+  },
+  "include": [
+    "mock/*.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/*.d.ts",
+    "node_modules/vite-plugin-pwa/client.d.ts"
+  ],
+  "exclude": ["dist", "**/*.js", "node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

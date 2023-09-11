@@ -1,0 +1,11 @@
+[production]
+defaults and not IE 11 and not op_mini all
+
+[staging]
+defaults and not IE 11 and not op_mini all
+
+[testing]
+defaults and not IE 11 and not op_mini all
+
+[development]
+defaults
