@@ -1,10 +1,9 @@
 pipeline {
-  // agent {
-  //   docker {
-  //     image node
-  //   }
-  // }
-  agent any
+  agent {
+    docker {
+      image node:16.20.2
+    }
+  }
 
   environment {
     // 自动进行构建不需要进行询问
