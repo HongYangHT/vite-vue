@@ -5,6 +5,10 @@ pipeline {
     }
   }
 
+  tools {
+    nodejs 'node16.20.2'
+  }
+
   environment {
     // 自动进行构建不需要进行询问
       CI = 'true'
