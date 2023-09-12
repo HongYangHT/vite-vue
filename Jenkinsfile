@@ -1,9 +1,10 @@
 pipeline {
-  agent {
-    docker {
-      image node
-    }
-  }
+  // agent {
+  //   docker {
+  //     image node
+  //   }
+  // }
+  agent any
 
   environment {
     // 自动进行构建不需要进行询问
@@ -47,7 +48,7 @@ pipeline {
     stage ('Deploy') {
       steps {
         echo 'Deploying...'
-        chmod 775 './bash/deploy.sh'
+        // chmod 775 './bash/deploy.sh'
         sh './bash/deploy.sh'
       }
 
