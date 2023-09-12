@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image node:16.20.2
+      image node
     }
   }
 
