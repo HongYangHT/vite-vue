@@ -12,8 +12,9 @@ pipeline {
 
   stages {
     stage ('开始打包') {
-      echo '开始打包...'
-      stops {
+      
+      steps {
+        echo '开始打包...'
         sh 'node -v && npm -v'
       }
     }
